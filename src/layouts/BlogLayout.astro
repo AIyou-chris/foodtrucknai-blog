@@ -1,0 +1,84 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  pubDate?: string;
+  keywords?: string[];
+}
+
+const { title, description, pubDate, keywords = [] } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | FoodTruckN AI Blog</title>
+    <meta name="description" content={description} />
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+  </head>
+
+  <body class="bg-brand-bg text-brand-white min-h-screen font-sans">
+
+    <!-- Nav -->
+    <nav class="border-b border-brand-rule sticky top-0 z-50" style="background:#1A1A1A;">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 no-underline">
+          <span class="text-brand-amber font-bold text-xl tracking-tight">FoodTruckN AI</span>
+          <span class="text-brand-muted text-sm">Blog</span>
+        </a>
+        <a
+          href="https://foodtrucknai.com"
+          target="_blank"
+          rel="noopener"
+          class="bg-brand-amber text-brand-bg font-bold px-4 py-2 rounded-lg text-sm hover:bg-brand-gold transition-colors no-underline"
+        >
+          Try Free →
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="max-w-5xl mx-auto px-4 py-12">
+      <slot />
+    </main>
+
+    <!-- Footer CTA -->
+    <footer class="border-t border-brand-rule mt-16">
+      <div class="max-w-5xl mx-auto px-4 py-16 text-center">
+        <p class="text-brand-muted text-sm uppercase tracking-widest mb-4">Stop losing money to bad systems</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-white mb-4">
+          Automate your food truck.<br />
+          <span class="text-brand-amber">Starts at $1/day.</span>
+        </h2>
+        <p class="text-brand-muted max-w-lg mx-auto mb-8">
+          Online ordering. AI-powered upsells. Real-time analytics. Built for operators who want to run lean and earn more.
+        </p>
+        <a
+          href="https://foodtrucknai.com"
+          target="_blank"
+          rel="noopener"
+          class="inline-block bg-brand-amber text-brand-bg font-bold px-8 py-4 rounded-xl text-lg hover:bg-brand-gold transition-colors no-underline"
+        >
+          Start Free at FoodTruckN AI →
+        </a>
+        <p class="text-brand-muted text-sm mt-6">
+          © {new Date().getFullYear()} FoodTruckN AI ·
+          <a href="https://foodtrucknai.com" class="text-brand-amber hover:underline">foodtrucknai.com</a>
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>

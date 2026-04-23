@@ -1,0 +1,107 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BlogLayout
+  title={post.data.title}
+  description={post.data.description}
+  pubDate={post.data.pubDate}
+  keywords={post.data.keywords}
+>
+
+  <!-- Breadcrumb -->
+  <nav class="text-sm text-brand-muted mb-8">
+    <a href="/" class="hover:text-brand-amber transition-colors">Blog</a>
+    <span class="mx-2">›</span>
+    {post.data.category && (
+      <>
+        <span class="text-brand-muted">{post.data.category}</span>
+        <span class="mx-2">›</span>
+      </>
+    )}
+    <span class="text-brand-white">{post.data.title}</span>
+  </nav>
+
+  <!-- Header -->
+  <header class="mb-12">
+    {post.data.category && (
+      <span class="text-brand-amber text-xs uppercase tracking-widest font-semibold mb-4 block">
+        {post.data.category}
+      </span>
+    )}
+    <h1 class="text-3xl md:text-5xl font-bold text-brand-white leading-tight mb-6">
+      {post.data.title}
+    </h1>
+    <p class="text-brand-muted text-lg mb-4 max-w-2xl">{post.data.description}</p>
+    <time class="text-brand-muted text-sm">
+      {new Date(post.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+    </time>
+  </header>
+
+  <!-- Inline CTA (top of article) -->
+  <div class="bg-brand-card border-l-4 border-brand-amber rounded-r-xl px-6 py-4 mb-10 flex items-center justify-between gap-4 flex-wrap">
+    <p class="text-brand-white text-sm font-medium">
+      FoodTruckN AI automates your orders and upsells. <span class="text-brand-amber">Starts at $1/day.</span>
+    </p>
+    <a
+      href="https://foodtrucknai.com"
+      target="_blank"
+      rel="noopener"
+      class="shrink-0 bg-brand-amber text-brand-bg font-bold px-4 py-2 rounded-lg text-sm hover:bg-brand-gold transition-colors no-underline"
+    >
+      Try Free →
+    </a>
+  </div>
+
+  <!-- Article body -->
+  <article class="prose prose-invert prose-amber max-w-none
+    prose-headings:text-brand-white
+    prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-10 prose-h2:mb-4
+    prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-8 prose-h3:mb-3
+    prose-p:text-brand-muted prose-p:leading-relaxed prose-p:mb-4
+    prose-li:text-brand-muted prose-li:leading-relaxed
+    prose-strong:text-brand-white
+    prose-a:text-brand-amber prose-a:no-underline hover:prose-a:underline
+    prose-hr:border-brand-rule
+    prose-blockquote:border-l-brand-amber prose-blockquote:text-brand-muted">
+    <Content />
+  </article>
+
+  <!-- Bottom CTA -->
+  <div class="mt-16 bg-brand-card border border-brand-amber/40 rounded-2xl p-10 text-center">
+    <p class="text-brand-amber text-sm uppercase tracking-widest font-semibold mb-3">Stop leaving money on the table</p>
+    <h2 class="text-3xl font-bold text-brand-white mb-4">
+      Automate your food truck with AI.<br />
+      <span class="text-brand-amber">$1/day. No contracts.</span>
+    </h2>
+    <p class="text-brand-muted max-w-lg mx-auto mb-8 text-sm leading-relaxed">
+      Online ordering. Smart upsells. Real-time analytics. Built for operators who want more revenue and less headache. Setup takes 10 minutes.
+    </p>
+    <a
+      href="https://foodtrucknai.com"
+      target="_blank"
+      rel="noopener"
+      class="inline-block bg-brand-amber text-brand-bg font-bold px-8 py-4 rounded-xl text-lg hover:bg-brand-gold transition-colors no-underline"
+    >
+      Start Free at FoodTruckN AI →
+    </a>
+  </div>
+
+  <!-- Back link -->
+  <div class="mt-10 text-center">
+    <a href="/" class="text-brand-muted hover:text-brand-amber transition-colors text-sm">← Back to all posts</a>
+  </div>
+
+</BlogLayout>

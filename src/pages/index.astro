@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../layouts/BlogLayout.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
+
+const categories = [...new Set(posts.map(p => p.data.category).filter(Boolean))];
+---
+
+<BlogLayout
+  title="Food Truck Business Tips & Guides"
+  description="Practical guides for food truck operators. More orders, less chaos, better margins — powered by FoodTruckN AI."
+>
+
+  <!-- Hero -->
+  <div class="text-center mb-16">
+    <p class="text-brand-amber text-sm uppercase tracking-widest font-semibold mb-3">FoodTruckN AI Blog</p>
+    <h1 class="text-4xl md:text-5xl font-bold text-brand-white mb-4 leading-tight">
+      Run a smarter food truck.
+    </h1>
+    <p class="text-brand-muted text-lg max-w-xl mx-auto">
+      Real tactics for real operators. No fluff. Just what works.
+    </p>
+  </div>
+
+  <!-- Category pills -->
+  {categories.length > 0 && (
+    <div class="flex flex-wrap gap-2 mb-10 justify-center">
+      {categories.map(cat => (
+        <span class="bg-brand-card border border-brand-rule text-brand-muted text-xs px-3 py-1 rounded-full uppercase tracking-wide">
+          {cat}
+        </span>
+      ))}
+    </div>
+  )}
+
+  <!-- Post grid -->
+  {posts.length === 0 ? (
+    <p class="text-center text-brand-muted">No posts yet. Check back soon.</p>
+  ) : (
+    <div class="grid gap-6 md:grid-cols-2">
+      {posts.map(post => (
+        <a
+          href={`/blog/${post.slug}`}
+          class="block bg-brand-card border border-brand-rule rounded-xl p-6 hover:border-brand-amber transition-colors no-underline group"
+        >
+          {post.data.category && (
+            <span class="text-brand-amber text-xs uppercase tracking-widest font-semibold mb-3 block">
+              {post.data.category}
+            </span>
+          )}
+          <h2 class="text-brand-white font-bold text-xl mb-2 group-hover:text-brand-amber transition-colors leading-snug">
+            {post.data.title}
+          </h2>
+          <p class="text-brand-muted text-sm leading-relaxed mb-4">
+            {post.data.description}
+          </p>
+          <div class="flex items-center justify-between">
+            <time class="text-brand-muted text-xs">
+              {new Date(post.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </time>
+            <span class="text-brand-amber text-sm font-semibold">Read →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+
+  <!-- Inline CTA banner -->
+  <div class="mt-16 bg-brand-card border border-brand-amber/30 rounded-2xl p-8 text-center">
+    <p class="text-brand-amber font-semibold text-sm uppercase tracking-widest mb-2">Ready to automate?</p>
+    <h3 class="text-2xl font-bold text-brand-white mb-3">FoodTruckN AI starts at $1/day.</h3>
+    <p class="text-brand-muted mb-6 max-w-md mx-auto text-sm">Online ordering, AI upsells, and analytics built for food truck operators who want to scale.</p>
+    <a
+      href="https://foodtrucknai.com"
+      target="_blank"
+      rel="noopener"
+      class="inline-block bg-brand-amber text-brand-bg font-bold px-6 py-3 rounded-lg hover:bg-brand-gold transition-colors no-underline"
+    >
+      Start Free →
+    </a>
+  </div>
+
+</BlogLayout>
