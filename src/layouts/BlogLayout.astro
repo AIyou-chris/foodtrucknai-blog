@@ -49,9 +49,40 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       </div>
     </nav>
 
-    <!-- Main -->
+    <!-- Mobile promo banner (hidden on md+) -->
+    <div class="md:hidden px-4 pt-6">
+      <a href="https://foodtrucknai.com" target="_blank" rel="noopener">
+        <img
+          src="/foodtrucknai-promo.png"
+          alt="FoodTruckN AI — Start free"
+          class="w-full rounded-xl"
+        />
+      </a>
+    </div>
+
+    <!-- Main: two-column on md+, single column on mobile -->
     <main class="max-w-5xl mx-auto px-4 py-12">
-      <slot />
+      <div class="md:flex md:gap-10 md:items-start">
+
+        <!-- Article content -->
+        <div class="min-w-0 flex-1">
+          <slot />
+        </div>
+
+        <!-- Sticky sidebar (hidden on mobile) -->
+        <aside class="hidden md:block flex-shrink-0 w-64">
+          <div class="sticky top-24">
+            <a href="https://foodtrucknai.com" target="_blank" rel="noopener">
+              <img
+                src="/foodtrucknai-promo.png"
+                alt="FoodTruckN AI — Start free"
+                class="w-full rounded-xl shadow-lg hover:opacity-90 transition-opacity"
+              />
+            </a>
+          </div>
+        </aside>
+
+      </div>
     </main>
 
     <!-- Footer CTA -->
