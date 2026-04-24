@@ -50,6 +50,15 @@ const { Content } = await post.render();
     </time>
   </header>
 
+  <!-- Hero image (auto-renders if image: is set in frontmatter) -->
+  {post.data.image && (
+    <img
+      src={post.data.image}
+      alt={post.data.title}
+      class="w-full rounded-2xl mb-10 object-cover max-h-96"
+    />
+  )}
+
   <!-- Inline CTA (top of article) -->
   <div class="bg-brand-card border-l-4 border-brand-amber rounded-r-xl px-6 py-4 mb-10 flex items-center justify-between gap-4 flex-wrap">
     <p class="text-brand-white text-sm font-medium">

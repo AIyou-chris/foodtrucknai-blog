@@ -38,6 +38,7 @@ title: "Best Food Truck Ordering App for [City] Operators"
 description: "[City]-specific hook about the market"
 pubDate: "[TODAY]"
 category: "City Guide"
+image:
 keywords: ["food truck app [city]", "food truck ordering [city]", ...]
 ---
 
@@ -56,6 +57,7 @@ title: "How to [Solve the Problem] on Your Food Truck"
 description: "Pain-point hook"
 pubDate: "[TODAY]"
 category: "Operations"
+image:
 keywords: [relevant to problem]
 ---
 
@@ -74,6 +76,7 @@ title: "How to [Use the Solution] on Your Food Truck"
 description: "Solution hook"
 pubDate: "[TODAY]"
 category: "Technology"
+image:
 keywords: [relevant to solution]
 ---
 
