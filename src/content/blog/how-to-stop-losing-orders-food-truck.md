@@ -4,6 +4,9 @@ description: "Every missed order is money gone forever. Here's how food truck op
 pubDate: "2026-04-01"
 category: "Operations"
 keywords: ["food truck orders", "food truck management", "online ordering food truck", "food truck revenue", "stop losing orders"]
+image: "https://images.unsplash.com/photo-1685478566051-8e5c5af68a58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzQzNzR8MHwxfHNlYXJjaHwxfHxmb29kJTIwdHJ1Y2slMjBidXN5JTIwbHVuY2glMjBjcm93ZHxlbnwxfDB8fHwxNzc3MDU1NDk4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+imageCredit: "Andrei Ianovskii"
+imageCreditUrl: "https://unsplash.com/@gn0me?utm_source=foodtrucknai&utm_medium=referral"
 ---
 
 You cooked the food. You set up the truck. You worked a 10-hour day.

@@ -4,6 +4,9 @@ description: "Seattle's food truck scene is competitive. The operators making th
 pubDate: "2026-04-05"
 category: "City Guide"
 keywords: ["food truck app Seattle", "Seattle food truck ordering", "food truck software Seattle", "Seattle mobile food vendor", "food truck online ordering Seattle"]
+image: "https://images.unsplash.com/photo-1677532167412-4ded698a6633?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzQzNzR8MHwxfHNlYXJjaHwxfHxzZWF0dGxlJTIwZm9vZCUyMHRydWNrJTIwbWFya2V0JTIwc3RyZWV0fGVufDF8MHx8fDE3NzcwNTU0OTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+imageCredit: "nader saremi"
+imageCreditUrl: "https://unsplash.com/@nssaremi?utm_source=foodtrucknai&utm_medium=referral"
 ---
 
 Seattle has over 400 licensed food trucks and mobile vendors.

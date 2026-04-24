@@ -4,6 +4,9 @@ description: "Manual order-taking is costing you money and energy. Here's the ex
 pubDate: "2026-04-15"
 category: "Operations"
 keywords: ["automate food truck orders", "food truck order automation", "food truck online ordering system", "food truck operations", "food truck digital ordering"]
+image: "https://images.unsplash.com/photo-1620589125156-fd5028c5e05b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzQzNzR8MHwxfHNlYXJjaHwxfHxmb29kJTIwdHJ1Y2slMjBtb2JpbGUlMjBvcmRlcmluZyUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc3NzA1NTQ5Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+imageCredit: "Joana Godinho"
+imageCreditUrl: "https://unsplash.com/@joana_g?utm_source=foodtrucknai&utm_medium=referral"
 ---
 
 Most food truck operators are doing everything manually.

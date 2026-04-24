@@ -50,13 +50,37 @@ const { Content } = await post.render();
     </time>
   </header>
 
-  <!-- Hero image (auto-renders if image: is set in frontmatter) -->
+  <!-- Hero image -->
   {post.data.image && (
-    <img
-      src={post.data.image}
-      alt={post.data.title}
-      class="w-full rounded-2xl mb-10 object-cover max-h-96"
-    />
+    <div class="mb-10">
+      <img
+        src={post.data.image}
+        alt={post.data.title}
+        class="w-full rounded-2xl object-cover max-h-96"
+      />
+      {post.data.imageCredit && (
+        <p class="text-brand-muted text-xs mt-2 text-right">
+          Photo by{' '}
+          <a
+            href={post.data.imageCreditUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-brand-amber hover:underline"
+          >
+            {post.data.imageCredit}
+          </a>
+          {' '}on{' '}
+          <a
+            href="https://unsplash.com?utm_source=foodtrucknai&utm_medium=referral"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-brand-amber hover:underline"
+          >
+            Unsplash
+          </a>
+        </p>
+      )}
+    </div>
   )}
 
   <!-- Inline CTA (top of article) -->

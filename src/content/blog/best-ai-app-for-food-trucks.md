@@ -4,6 +4,9 @@ description: "AI isn't just for big restaurants anymore. Here's how food truck o
 pubDate: "2026-04-10"
 category: "Technology"
 keywords: ["AI app food truck", "food truck AI software", "best food truck app 2026", "food truck automation", "AI ordering food truck"]
+image: "https://images.unsplash.com/photo-1588035984541-10abeee32fab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzQzNzR8MHwxfHNlYXJjaHwxfHxmb29kJTIwdHJ1Y2slMjBhaSUyMHRlY2hub2xvZ3klMjByZXN0YXVyYW50fGVufDF8MHx8fDE3NzcwNTU0OTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+imageCredit: "Daiji Umemoto"
+imageCreditUrl: "https://unsplash.com/@daijiumemoto?utm_source=foodtrucknai&utm_medium=referral"
 ---
 
 A couple years ago, "AI for food trucks" meant nothing.
