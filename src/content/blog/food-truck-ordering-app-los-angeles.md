@@ -4,9 +4,9 @@ description: "LA has more food trucks than almost any city in the country. The o
 pubDate: "2026-04-23"
 category: "City Guide"
 keywords: ["food truck app Los Angeles", "LA food truck ordering", "food truck software LA", "Los Angeles mobile food vendor", "food truck online ordering Los Angeles", "food truck ordering app California"]
-image: "https://images.unsplash.com/photo-1762908407323-28e9a9efd0be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzQzNzR8MHwxfHNlYXJjaHwxfHxsb3MlMjBhbmdlbGVzJTIwZm9vZCUyMHRydWNrJTIwc3RyZWV0fGVufDF8MHx8fDE3NzcwNTU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-imageCredit: "Uran Wang"
-imageCreditUrl: "https://unsplash.com/@uranwang?utm_source=foodtrucknai&utm_medium=referral"
+image: "https://images.unsplash.com/photo-1762550497215-96c1b668fcf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MzQzNzR8MHwxfHNlYXJjaHwxfHxwZW9wbGUlMjBlYXRpbmclMjBmb29kJTIwdHJ1Y2t8ZW58MXwwfHx8MTc3NzA1NTcwMnww&ixlib=rb-4.1.0&q=80&w=1080"
+imageCredit: "Jaykumar Bherwani"
+imageCreditUrl: "https://unsplash.com/@jaykumar_bherwani?utm_source=foodtrucknai&utm_medium=referral"
 ---
 
 Los Angeles has over 10,000 licensed food trucks and mobile food vendors.
