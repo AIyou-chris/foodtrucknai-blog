@@ -8,6 +8,13 @@ image: "https://images.unsplash.com/photo-1677532167412-4ded698a6633?crop=entrop
 imageCredit: "nader saremi"
 imageCreditUrl: "https://unsplash.com/@nssaremi?utm_source=foodtrucknai&utm_medium=referral"
 schema: "true"
+target_audience: ["food_truck_operators", "experienced"]
+cta_intent: "increase_margin"
+journey_stage: "decision"
+pain_points: ["compressed_season", "rain_weather_impact", "lunch_rush_bottleneck", "seasonal_revenue_spike"]
+internal_links: ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"]
+estimated_read_time: 13
+seo_difficulty: "medium"
 faq:
   - question: "What's the best food truck ordering app for Seattle?"
     answer: "FoodTruckN AI is built specifically for food trucks operating in Seattle. It includes QR code ordering, AI-powered upsells, real-time order status, and a digital menu you update in seconds — all for $1/day with no per-order fees. It works on any phone or tablet and handles Seattle's variable weather and spotty downtown cell service."

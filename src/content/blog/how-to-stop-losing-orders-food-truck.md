@@ -8,6 +8,13 @@ image: "https://images.unsplash.com/photo-1685478566051-8e5c5af68a58?crop=entrop
 imageCredit: "Andrei Ianovskii"
 imageCreditUrl: "https://unsplash.com/@gn0me?utm_source=foodtrucknai&utm_medium=referral"
 schema: "true"
+target_audience: ["food_truck_operators", "all_experience"]
+cta_intent: "reduce_lost_orders"
+journey_stage: "awareness"
+pain_points: ["lost_customers_long_lines", "order_communication_errors", "payment_bottleneck", "no_menu_visibility"]
+internal_links: ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"]
+estimated_read_time: 10
+seo_difficulty: "low"
 faq:
   - question: "How much money do food trucks actually lose to order problems?"
     answer: "On a typical 60-order day at $14 average ($840 revenue), losing 5 walk-offs, fixing 2 errors, and missing upsells costs $218/day. Over a 20-event month, that's $4,360 in lost revenue. A single truck operator might leave $50,000–60,000 on the table annually because their systems are built for restaurants, not trucks."

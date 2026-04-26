@@ -1,0 +1,170 @@
+{
+  "version": "1.0",
+  "generated": "2026-04-25",
+  "total_posts": 5,
+  "posts": [
+    {
+      "slug": "how-to-stop-losing-orders-food-truck",
+      "title": "How to Stop Losing Orders on Your Food Truck",
+      "description": "Food truck operators lose $4,000–5,000 per month to walk-offs, order errors, and missed upsells. Here's the 4-system fix — and why AI automates it.",
+      "pubDate": "2026-04-01",
+      "category": "Operations",
+      "target_audience": ["food_truck_operators", "all_experience"],
+      "cta_intent": "reduce_lost_orders",
+      "journey_stage": "awareness",
+      "pain_points": ["lost_customers_long_lines", "order_communication_errors", "payment_bottleneck", "no_menu_visibility"],
+      "internal_links": ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"],
+      "estimated_read_time": 10,
+      "seo_difficulty": "low",
+      "image": "https://images.unsplash.com/photo-1685478566051-8e5c5af68a58",
+      "estimated_monthly_traffic": 450
+    },
+    {
+      "slug": "food-truck-ordering-app-seattle",
+      "title": "Best Food Truck Ordering App for Seattle Operators",
+      "description": "Seattle's 400+ food trucks compete on service speed and customer experience, not just food. The operators making $2,000–4,000/month more aren't working harder — they're using AI-powered ordering and upsells. Here's the stack.",
+      "pubDate": "2026-04-05",
+      "category": "City Guide",
+      "target_audience": ["food_truck_operators", "experienced"],
+      "cta_intent": "increase_margin",
+      "journey_stage": "decision",
+      "pain_points": ["compressed_season", "rain_weather_impact", "lunch_rush_bottleneck", "seasonal_revenue_spike"],
+      "internal_links": ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"],
+      "estimated_read_time": 13,
+      "seo_difficulty": "medium",
+      "image": "https://images.unsplash.com/photo-1677532167412-4ded698a6633",
+      "estimated_monthly_traffic": 680
+    },
+    {
+      "slug": "best-ai-app-for-food-trucks",
+      "title": "The Best AI App for Food Trucks in 2026",
+      "description": "Food truck operators using AI are adding $35,000+/year in revenue through automated upsells, demand forecasting, and real-time analytics. Here's how to choose the right tool and what to avoid.",
+      "pubDate": "2026-04-10",
+      "category": "Technology",
+      "target_audience": ["food_truck_operators", "comparing_tools"],
+      "cta_intent": "compare_tools",
+      "journey_stage": "consideration",
+      "pain_points": ["overpriced_restaurant_software", "choosing_between_options", "roi_uncertainty"],
+      "internal_links": ["how-to-automate-food-truck-orders", "food-truck-ordering-app-los-angeles"],
+      "estimated_read_time": 14,
+      "seo_difficulty": "high",
+      "image": "https://images.unsplash.com/photo-1588035984541-10abeee32fab",
+      "estimated_monthly_traffic": 920
+    },
+    {
+      "slug": "how-to-automate-food-truck-orders",
+      "title": "How to Automate Food Truck Orders (And Why It Matters)",
+      "description": "Automated ordering adds $31,000+/year to food truck revenue. Here's the exact system operators use to automate orders, eliminate errors, and increase per-ticket value without slowing service.",
+      "pubDate": "2026-04-15",
+      "category": "Operations",
+      "target_audience": ["food_truck_operators", "all_experience"],
+      "cta_intent": "reduce_manual_work",
+      "journey_stage": "awareness",
+      "pain_points": ["manual_order_taking", "handwriting_errors", "cash_handling_friction", "no_data_visibility"],
+      "internal_links": ["how-to-stop-losing-orders-food-truck", "best-ai-app-for-food-trucks"],
+      "estimated_read_time": 11,
+      "seo_difficulty": "medium",
+      "image": "https://images.unsplash.com/photo-1620589125156-fd5028c5e05b",
+      "estimated_monthly_traffic": 750
+    },
+    {
+      "slug": "food-truck-ordering-app-los-angeles",
+      "title": "Best Food Truck Ordering App for Los Angeles Operators",
+      "description": "LA has 10,000+ food trucks. Here's the ordering app stack that's earning operators $160–400 extra per service day. No per-order fees. Setup in 10 minutes.",
+      "pubDate": "2026-04-23",
+      "category": "City Guide",
+      "target_audience": ["food_truck_operators", "experienced"],
+      "cta_intent": "increase_margin",
+      "journey_stage": "decision",
+      "pain_points": ["long_service_lines", "order_errors", "missed_upsells", "cash_handling_time"],
+      "internal_links": ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"],
+      "estimated_read_time": 12,
+      "seo_difficulty": "medium",
+      "image": "https://images.unsplash.com/photo-1762550497215-96c1b668fcf8",
+      "estimated_monthly_traffic": 890
+    }
+  ],
+  "content_gaps": {
+    "audience": {
+      "food_truck_operators": 5,
+      "fleet_managers": 0,
+      "dispatchers": 0,
+      "accountants": 0,
+      "notes": "All content targets food truck operators. Need fleet manager, dispatcher, and accountant content."
+    },
+    "journey_stages": {
+      "awareness": 2,
+      "consideration": 1,
+      "decision": 2,
+      "notes": "Good awareness and decision content. Consideration stage could use one more post."
+    },
+    "cta_intents": {
+      "reduce_lost_orders": 1,
+      "reduce_manual_work": 1,
+      "compare_tools": 1,
+      "increase_margin": 2,
+      "notes": "Margin increase is well-covered. Could add content for cost reduction, speed/efficiency."
+    }
+  },
+  "internal_link_map": {
+    "how-to-stop-losing-orders-food-truck": {
+      "links_to": ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"],
+      "linked_from": []
+    },
+    "food-truck-ordering-app-seattle": {
+      "links_to": ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"],
+      "linked_from": []
+    },
+    "best-ai-app-for-food-trucks": {
+      "links_to": ["how-to-automate-food-truck-orders", "food-truck-ordering-app-los-angeles"],
+      "linked_from": ["how-to-stop-losing-orders-food-truck", "food-truck-ordering-app-seattle", "how-to-automate-food-truck-orders"]
+    },
+    "how-to-automate-food-truck-orders": {
+      "links_to": ["how-to-stop-losing-orders-food-truck", "best-ai-app-for-food-trucks"],
+      "linked_from": ["how-to-stop-losing-orders-food-truck", "food-truck-ordering-app-seattle", "food-truck-ordering-app-los-angeles", "best-ai-app-for-food-trucks"]
+    },
+    "food-truck-ordering-app-los-angeles": {
+      "links_to": ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"],
+      "linked_from": ["best-ai-app-for-food-trucks"]
+    }
+  },
+  "seo_authority_clusters": {
+    "awareness_cluster": ["how-to-stop-losing-orders-food-truck", "how-to-automate-food-truck-orders"],
+    "decision_cluster": ["food-truck-ordering-app-los-angeles", "food-truck-ordering-app-seattle"],
+    "hub_posts": ["best-ai-app-for-food-trucks"]
+  },
+  "next_content_recommendations": {
+    "high_priority": [
+      {
+        "title": "Food Truck Ordering App for [New City]",
+        "audience": "food_truck_operators",
+        "journey_stage": "decision",
+        "intent": "increase_margin",
+        "reason": "City guides performing well; expand to tier-2 cities (Denver, Austin, Miami)"
+      },
+      {
+        "title": "How to Calculate ROI on Food Truck Automation",
+        "audience": "food_truck_operators",
+        "journey_stage": "consideration",
+        "intent": "compare_tools",
+        "reason": "Gap in consideration stage; helps convert awareness to decisions"
+      }
+    ],
+    "medium_priority": [
+      {
+        "title": "Food Truck Fleet Management with AI",
+        "audience": "fleet_managers",
+        "journey_stage": "awareness",
+        "intent": "understand_multi_truck_ops",
+        "reason": "New audience segment; untapped market"
+      },
+      {
+        "title": "Food Truck Accounting & Sales Tax with Automation",
+        "audience": "accountants",
+        "journey_stage": "awareness",
+        "intent": "simplify_bookkeeping",
+        "reason": "B2B angle; could drive referral partnerships"
+      }
+    ]
+  }
+}

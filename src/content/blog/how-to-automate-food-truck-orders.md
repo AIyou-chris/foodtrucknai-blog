@@ -8,6 +8,13 @@ image: "https://images.unsplash.com/photo-1620589125156-fd5028c5e05b?crop=entrop
 imageCredit: "Joana Godinho"
 imageCreditUrl: "https://unsplash.com/@joana_g?utm_source=foodtrucknai&utm_medium=referral"
 schema: "true"
+target_audience: ["food_truck_operators", "all_experience"]
+cta_intent: "reduce_manual_work"
+journey_stage: "awareness"
+pain_points: ["manual_order_taking", "handwriting_errors", "cash_handling_friction", "no_data_visibility"]
+internal_links: ["how-to-stop-losing-orders-food-truck", "best-ai-app-for-food-trucks"]
+estimated_read_time: 11
+seo_difficulty: "medium"
 faq:
   - question: "What does automated ordering actually mean for a food truck?"
     answer: "It means customers order and pay on their phone (via QR code or link), the order goes directly to your kitchen display, and they get notified when it's ready. No handwritten tickets, no cash handling, no communication errors. The system also automatically suggests add-ons (upsells) at checkout."

@@ -8,6 +8,13 @@ image: "https://images.unsplash.com/photo-1588035984541-10abeee32fab?crop=entrop
 imageCredit: "Daiji Umemoto"
 imageCreditUrl: "https://unsplash.com/@daijiumemoto?utm_source=foodtrucknai&utm_medium=referral"
 schema: "true"
+target_audience: ["food_truck_operators", "comparing_tools"]
+cta_intent: "compare_tools"
+journey_stage: "consideration"
+pain_points: ["overpriced_restaurant_software", "choosing_between_options", "roi_uncertainty"]
+internal_links: ["how-to-automate-food-truck-orders", "food-truck-ordering-app-los-angeles"]
+estimated_read_time: 14
+seo_difficulty: "high"
 faq:
   - question: "What's the highest-ROI AI feature for food trucks?"
     answer: "Automated upsells. When a customer orders a burger, the system suggests 'Add fries and a drink for $3.50?' 40–50% say yes. On 80 orders/day with $3 average upsell, that's $35,000+/year. You do zero extra work. The AI handles it automatically."

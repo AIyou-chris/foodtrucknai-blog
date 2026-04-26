@@ -11,6 +11,7 @@ const blog = defineCollection({
     image: z.string().optional(),
     imageCredit: z.string().optional(),
     imageCreditUrl: z.string().optional(),
+    faq: z.array(z.object({ question: z.string(), answer: z.string() })).optional(),
   }),
 });
 

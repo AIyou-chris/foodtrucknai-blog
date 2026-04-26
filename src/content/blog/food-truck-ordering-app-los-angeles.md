@@ -8,6 +8,13 @@ image: "https://images.unsplash.com/photo-1762550497215-96c1b668fcf8?crop=entrop
 imageCredit: "Jaykumar Bherwani"
 imageCreditUrl: "https://unsplash.com/@jaykumar_bherwani?utm_source=foodtrucknai&utm_medium=referral"
 schema: "true"
+target_audience: ["food_truck_operators", "experienced"]
+cta_intent: "increase_margin"
+journey_stage: "decision"
+pain_points: ["long_service_lines", "order_errors", "missed_upsells", "cash_handling_time"]
+internal_links: ["how-to-automate-food-truck-orders", "best-ai-app-for-food-trucks"]
+estimated_read_time: 12
+seo_difficulty: "medium"
 faq:
   - question: "What's the best food truck ordering app for Los Angeles?"
     answer: "FoodTruckN AI is built specifically for food trucks operating in LA. It includes QR code ordering, AI-powered upsells, real-time order status, and a digital menu you can update in seconds — all for $1/day with no per-order fees. It works on any phone or tablet and handles spotty cell service common at outdoor LA events."
