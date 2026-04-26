@@ -129,9 +129,46 @@ const faqSchema = faq && faq.length > 0 ? {
     :global(article blockquote) {
       line-height: 1.8;
     }
+
+    .sticky-cta {
+      position: fixed;
+      right: 20px;
+      top: 100px;
+      z-index: 40;
+      animation: slideInRight 0.5s ease-out;
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sticky-cta {
+        display: none;
+      }
+    }
   </style>
 
   <body class="bg-brand-bg text-brand-white min-h-screen font-sans">
+    <!-- Sticky food truck QR CTA -->
+    <div class="sticky-cta">
+      <a href="https://foodtrucknai.com" target="_blank" rel="noopener" class="block">
+        <div class="bg-brand-bg border-2 border-brand-amber rounded-lg p-3 shadow-lg hover:shadow-xl transition-shadow max-w-24">
+          <div class="text-center">
+            <div class="text-2xl mb-2">🚚</div>
+            <p class="text-xs text-brand-amber font-bold mb-2">Scan to start</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://foodtrucknai.com" alt="FoodTruckN AI QR Code" class="w-full rounded" />
+          </div>
+        </div>
+      </a>
+    </div>
 
     <!-- Nav -->
     <nav class="border-b border-brand-rule sticky top-0 z-50" style="background:#1A1A1A;">
