@@ -119,19 +119,65 @@ const faqSchema = faq && faq.length > 0 ? {
   <style>
     :global(body) {
       background-color: #0a0a0a;
+      color: #ffffff;
+    }
+
+    :global(article) {
+      color: #ffffff;
     }
 
     :global(article p) {
       line-height: 1.8;
+      color: #e0e0e0;
+    }
+
+    :global(article h1),
+    :global(article h2),
+    :global(article h3),
+    :global(article h4),
+    :global(article h5),
+    :global(article h6) {
+      color: #ffffff;
     }
 
     :global(article hr) {
       margin: 2rem 0;
       padding: 10px 0;
+      border-color: #333333;
     }
 
     :global(article blockquote) {
       line-height: 1.8;
+      color: #e0e0e0;
+      border-color: #ff9d2d;
+    }
+
+    :global(article a) {
+      color: #ff9d2d;
+    }
+
+    :global(article a:hover) {
+      color: #ffa840;
+    }
+
+    :global(article table) {
+      border-color: #333333;
+    }
+
+    :global(article th),
+    :global(article td) {
+      border-color: #333333;
+      color: #e0e0e0;
+    }
+
+    :global(article th) {
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    :global(article code) {
+      background-color: #1a1a1a;
+      color: #ff9d2d;
     }
   </style>
 
