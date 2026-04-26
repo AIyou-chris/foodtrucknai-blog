@@ -33,7 +33,7 @@ faq:
     answer: "No — the opposite. Payment apps typically take 2.6% + 10¢ per transaction. FoodTruckN AI is $29/month flat. On an 80-cover Saturday at $14 average, that's $22–33 in fees every single day with payment apps. With FoodTruckN, you pay one fixed price for the entire month. You save money, accept cards, reduce cash-handling errors, and have automatic sales records for accounting."
 ---
 
-> **TL;DR:** LA food trucks that use QR ordering + AI upsells are averaging $160–400 extra per service day. Setup takes 10 minutes. The app costs $1/day. Read on for the full breakdown.
+> LA food trucks that use QR ordering + AI upsells are averaging $160–400 extra per service day. Setup takes 10 minutes. The app costs $1/day. Read on for the full breakdown.
 
 ---
 

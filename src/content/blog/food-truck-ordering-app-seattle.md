@@ -23,7 +23,7 @@ faq:
     answer: "Washington State requires a Mobile Food Unit License through the Department of Health. The City of Seattle issues the Mobile Food Unit Permit annually. Operating without proper permits results in $500+ fines. FoodTruckN AI's built-in sales tax calculation makes quarterly compliance much easier."
 ---
 
-> **TL;DR:** Seattle's 400+ food trucks are competing on convenience, not just food. Operators using online ordering + AI upsells are averaging $2,000–4,000 more per month. Setup takes 10 minutes. The tool costs $1/day. Read on for what's actually working.
+> Seattle's 400+ food trucks are competing on convenience, not just food. Operators using online ordering + AI upsells are averaging $2,000–4,000 more per month. Setup takes 10 minutes. The tool costs $1/day. Read on for what's actually working.
 
 ---
 

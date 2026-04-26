@@ -116,6 +116,21 @@ const faqSchema = faq && faq.length > 0 ? {
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
   </head>
 
+  <style>
+    :global(article p) {
+      line-height: 1.8;
+    }
+
+    :global(article hr) {
+      margin: 2rem 0;
+      padding: 10px 0;
+    }
+
+    :global(article blockquote) {
+      line-height: 1.8;
+    }
+  </style>
+
   <body class="bg-brand-bg text-brand-white min-h-screen font-sans">
 
     <!-- Nav -->
