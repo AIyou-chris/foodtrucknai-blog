@@ -129,87 +129,87 @@ const faqSchema = faq && faq.length > 0 ? {
     :global(article blockquote) {
       line-height: 1.8;
     }
+  </style>
 
-
-    <!-- Nav -->
-    <nav class="border-b border-brand-rule sticky top-0 z-50" style="background:#1A1A1A;">
-      <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2 no-underline">
-          <span class="text-brand-amber font-bold text-xl tracking-tight">FoodTruckN AI</span>
-          <span class="text-brand-muted text-sm">Blog</span>
-        </a>
-        <a
-          href="https://foodtrucknai.com"
-          target="_blank"
-          rel="noopener"
-          class="bg-brand-amber text-brand-bg font-bold px-4 py-2 rounded-lg text-sm hover:bg-brand-gold transition-colors no-underline"
-        >
-          Try Free →
-        </a>
-      </div>
-    </nav>
-
-    <!-- Mobile promo banner (hidden on md+) -->
-    <div class="md:hidden px-4 pt-6">
-      <a href="https://foodtrucknai.com" target="_blank" rel="noopener">
-        <img
-          src="/foodtrucknai-promo.png"
-          alt="FoodTruckN AI — Start free"
-          class="w-full rounded-xl"
-        />
+  <!-- Nav -->
+  <nav class="border-b border-brand-rule sticky top-0 z-50" style="background:#1A1A1A;">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 no-underline">
+        <span class="text-brand-amber font-bold text-xl tracking-tight">FoodTruckN AI</span>
+        <span class="text-brand-muted text-sm">Blog</span>
+      </a>
+      <a
+        href="https://foodtrucknai.com"
+        target="_blank"
+        rel="noopener"
+        class="bg-brand-amber text-brand-bg font-bold px-4 py-2 rounded-lg text-sm hover:bg-brand-gold transition-colors no-underline"
+      >
+        Try Free →
       </a>
     </div>
+  </nav>
 
-    <!-- Main: two-column on md+, single column on mobile -->
-    <main class="max-w-5xl mx-auto px-4 py-12">
-      <div class="md:flex md:gap-10 md:items-start">
+  <!-- Mobile promo banner (hidden on md+) -->
+  <div class="md:hidden px-4 pt-6">
+    <a href="https://foodtrucknai.com" target="_blank" rel="noopener">
+      <img
+        src="/foodtrucknai-promo.png"
+        alt="FoodTruckN AI — Start free"
+        class="w-full rounded-xl"
+      />
+    </a>
+  </div>
 
-        <!-- Article content -->
-        <div class="min-w-0 flex-1">
-          <slot />
+  <!-- Main: two-column on md+, single column on mobile -->
+  <main class="max-w-5xl mx-auto px-4 py-12">
+    <div class="md:flex md:gap-10 md:items-start">
+
+      <!-- Article content -->
+      <div class="min-w-0 flex-1">
+        <slot />
+      </div>
+
+      <!-- Sticky sidebar (hidden on mobile) -->
+      <aside class="hidden md:block flex-shrink-0 w-64">
+        <div class="fixed top-20 right-4 w-64 z-30">
+          <a href="https://foodtrucknai.com" target="_blank" rel="noopener">
+            <img
+              src="/foodtrucknai-promo.png"
+              alt="FoodTruckN AI — Start free"
+              class="w-full rounded-xl shadow-lg hover:opacity-90 transition-opacity"
+            />
+          </a>
         </div>
+      </aside>
 
-        <!-- Sticky sidebar (hidden on mobile) -->
-        <aside class="hidden md:block flex-shrink-0 w-64">
-          <div class="fixed top-20 right-4 w-64 z-30">
-            <a href="https://foodtrucknai.com" target="_blank" rel="noopener">
-              <img
-                src="/foodtrucknai-promo.png"
-                alt="FoodTruckN AI — Start free"
-                class="w-full rounded-xl shadow-lg hover:opacity-90 transition-opacity"
-              />
-            </a>
-          </div>
-        </aside>
+    </div>
+  </main>
 
-      </div>
-    </main>
+  <!-- Footer CTA -->
+  <footer class="border-t border-brand-rule mt-16">
+    <div class="max-w-5xl mx-auto px-4 py-16 text-center">
+      <p class="text-brand-muted text-sm uppercase tracking-widest mb-4">Stop losing money to bad systems</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-brand-white mb-4">
+        Automate your food truck.<br />
+        <span class="text-brand-amber">Starts at $1/day.</span>
+      </h2>
+      <p class="text-brand-muted max-w-lg mx-auto mb-8">
+        Online ordering. AI-powered upsells. Real-time analytics. Built for operators who want to run lean and earn more.
+      </p>
+      <a
+        href="https://foodtrucknai.com"
+        target="_blank"
+        rel="noopener"
+        class="inline-block bg-brand-amber text-brand-bg font-bold px-8 py-4 rounded-xl text-lg hover:bg-brand-gold transition-colors no-underline"
+      >
+        Start Free at FoodTruckN AI →
+      </a>
+      <p class="text-brand-muted text-sm mt-6">
+        © {new Date().getFullYear()} FoodTruckN AI ·
+        <a href="https://foodtrucknai.com" class="text-brand-amber hover:underline">foodtrucknai.com</a>
+      </p>
+    </div>
+  </footer>
 
-    <!-- Footer CTA -->
-    <footer class="border-t border-brand-rule mt-16">
-      <div class="max-w-5xl mx-auto px-4 py-16 text-center">
-        <p class="text-brand-muted text-sm uppercase tracking-widest mb-4">Stop losing money to bad systems</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-brand-white mb-4">
-          Automate your food truck.<br />
-          <span class="text-brand-amber">Starts at $1/day.</span>
-        </h2>
-        <p class="text-brand-muted max-w-lg mx-auto mb-8">
-          Online ordering. AI-powered upsells. Real-time analytics. Built for operators who want to run lean and earn more.
-        </p>
-        <a
-          href="https://foodtrucknai.com"
-          target="_blank"
-          rel="noopener"
-          class="inline-block bg-brand-amber text-brand-bg font-bold px-8 py-4 rounded-xl text-lg hover:bg-brand-gold transition-colors no-underline"
-        >
-          Start Free at FoodTruckN AI →
-        </a>
-        <p class="text-brand-muted text-sm mt-6">
-          © {new Date().getFullYear()} FoodTruckN AI ·
-          <a href="https://foodtrucknai.com" class="text-brand-amber hover:underline">foodtrucknai.com</a>
-        </p>
-      </div>
-    </footer>
-
-  </body>
+</body>
 </html>
