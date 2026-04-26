@@ -117,6 +117,10 @@ const faqSchema = faq && faq.length > 0 ? {
   </head>
 
   <style>
+    :global(body) {
+      background-color: #0a0a0a;
+    }
+
     :global(article p) {
       line-height: 1.8;
     }
@@ -161,7 +165,7 @@ const faqSchema = faq && faq.length > 0 ? {
   </div>
 
   <!-- Main: two-column on md+, single column on mobile -->
-  <main class="max-w-5xl mx-auto px-4 py-12">
+  <main class="max-w-5xl mx-auto px-4 py-12 bg-brand-bg">
     <div class="md:flex md:gap-10 md:items-start">
 
       <!-- Article content -->
@@ -186,7 +190,7 @@ const faqSchema = faq && faq.length > 0 ? {
   </main>
 
   <!-- Footer CTA -->
-  <footer class="border-t border-brand-rule mt-16">
+  <footer class="border-t border-brand-rule mt-16 bg-brand-bg">
     <div class="max-w-5xl mx-auto px-4 py-16 text-center">
       <p class="text-brand-muted text-sm uppercase tracking-widest mb-4">Stop losing money to bad systems</p>
       <h2 class="text-3xl md:text-4xl font-bold text-brand-white mb-4">
